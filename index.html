@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeffrey Geli – .NET Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: #f5f6fa; color: #333; }
+
+    /* LAYOUT */
+    .layout { display: flex; width: 100%; }
+    .sidebar { width: 23%; background: #fff; padding: 30px; min-height: 100vh; box-shadow: 3px 0 10px rgba(0,0,0,0.06); }
+    .content { width: 77%; padding: 40px; }
+
+    /* SIDEBAR */
+    .profile-pic { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; }
+    .name { font-size: 1.6rem; font-weight: 700; }
+    .role { font-size: 1rem; color: #f39c12; margin-bottom: 20px; }
+
+    .info-box { margin-bottom: 25px; }
+    .info-title { font-weight: 600; margin-bottom: 8px; }
+    .info-item { margin-bottom: 5px; font-size: 0.9rem; color: #555; }
+
+    .skill-bar { width: 100%; background: #eee; border-radius: 20px; height: 8px; overflow: hidden; margin: 6px 0 15px; }
+    .skill-fill { height: 100%; background: #f39c12; }
+
+    .download-btn { display: inline-block; background: #f39c12; padding: 12px 20px; color: white; font-weight: 600; border-radius: 8px; text-align: center; margin-top: 20px; text-decoration: none; }
+
+    /* HERO */
+    .hero { background: #fff; padding: 50px; border-radius: 15px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 3px 12px rgba(0,0,0,0.08); }
+    .hero-text { max-width: 55%; }
+    .hero h1 { font-size: 2.6rem; font-weight: 700; }
+    .highlight { color: #f39c12; }
+    .hero-btn { background: #f39c12; border: none; padding: 12px 25px; color: #fff; font-weight: 600; border-radius: 8px; margin-top: 25px; cursor: pointer; }
+    .hero-img { width: 280px; border-radius: 12px; }
+
+    /* SERVICES */
+    .section-title { text-align: center; font-size: 2rem; margin: 50px 0 10px; font-weight: 700; }
+    .services-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-top: 30px; }
+    .service-card { background: #fff; padding: 25px; border-radius: 12px; text-align: center; box-shadow: 0 3px 12px rgba(0,0,0,0.08); }
+    .service-card h3 { margin-top: 15px; font-size: 1.2rem; font-weight: 600; }
+
+  </style>
+</head>
+<body>
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <img src="https://scontent.fmnl45-1.fna.fbcdn.net/v/t1.6435-1/80749245_10216495781214867_6339411384329043968_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeEM7ZnoTFhFlQFGxEMtNdwNy5yVmquS2VnLnJWaq5LZWYsEspMdXk5FNDQ0bYe2s-Y&_nc_ohc=JXuT6Y68Z4QQ7kNvwEmwcy9&_nc_oc=AdmCQcztUYIY8eeS-2QGPqA4izZjN-uDt6K11O4Mg4zmLl4ye5VBRXF_hAPZ0Ading9LBzwFNJ9LJlceG94K32X4&_nc_zt=24&_nc_ht=scontent.fmnl45-1.fna&_nc_gid=7VP9HWiI_vWcNVBzI6bF4w&oh=00_AfiFV0XD6xMuUKvhu7yhV9oGAthr00XfR7pb7DXaYAAIeA&oe=6943D6EF" class="profile-pic" />
+    <div class="name">Jeffrey Geli</div>
+    <div class="role">.NET Developer</div>
+
+    <div class="info-box">
+      <div class="info-title">Age</div>
+      <div class="info-item">30</div>
+
+      <div class="info-title">Residence</div>
+      <div class="info-item">Philippines</div>
+
+      <div class="info-title">Availability</div>
+      <div class="info-item">Available</div>
+
+      <div class="info-title">Address</div>
+      <div class="info-item">Malabon City</div>
+    </div>
+
+    <div class="info-box">
+      <div class="info-title">Languages</div>
+      <div>English</div>
+      <div class="skill-bar"><div class="skill-fill" style="width: 100%"></div></div>
+      <div>Filipino</div>
+      <div class="skill-bar"><div class="skill-fill" style="width: 100%"></div></div>
+    </div>
+
+    <div class="info-box">
+      <div class="info-title">Skills</div>
+      <div>.NET / .NET Core</div>
+      <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+      <div>ASP.NET MVC</div>
+      <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+      <div>Web API</div>
+      <div class="skill-bar"><div class="skill-fill" style="width: 92%"></div></div>
+      <div>SQL Server</div>
+      <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+    </div>
+
+    <a href="#" class="download-btn">Download CV</a>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="content">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-text">
+        <h1>I'm Jeffrey Geli<br><span class="highlight">Software Engineer</span></h1>
+        <p>Experienced software engineer specializing in ASP.NET, Web API, Microservices, and enterprise application development.</p>
+        <button class="hero-btn">Hire Me</button>
+      </div>
+      <img src="https://avatars.githubusercontent.com/u/18645001?v=4" class="hero-img" />
+    </div>
+
+    <!-- SERVICES -->
+    <h2 class="section-title">My Services</h2>
+    <p style="text-align:center; color:#555">High-quality engineering solutions built with modern architectures.</p>
+
+    <div class="services-container">
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>ASP.NET, MVC, SPA applications, REST API development.</p>
+      </div>
+      <div class="service-card">
+        <h3>System Architecture</h3>
+        <p>Microservices, SOA, scalable enterprise system design.</p>
+      </div>
+      <div class="service-card">
+        <h3>Mobile Development</h3>
+        <p>Xamarin cross‑platform mobile app development.</p>
+      </div>
+      <div class="service-card">
+        <h3>Database Engineering</h3>
+        <p>SQL optimization, DB design, performance tuning.</p>
+      </div>
+      <div class="service-card">
+        <h3>UI/UX Implementation</h3>
+        <p>Responsive UI, frontend integration, Vue.js development.</p>
+      </div>
+      <div class="service-card">
+        <h3>Software Testing</h3>
+        <p>Debugging, QA, validations, and production monitoring.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
