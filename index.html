@@ -1,140 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jeffrey Geli – .NET Developer Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Poppins', sans-serif; background: #f5f6fa; color: #333; }
-
-    /* LAYOUT */
-    .layout { display: flex; width: 100%; }
-    .sidebar { width: 23%; background: #fff; padding: 30px; min-height: 100vh; box-shadow: 3px 0 10px rgba(0,0,0,0.06); }
-    .content { width: 77%; padding: 40px; }
-
-    /* SIDEBAR */
-    .profile-pic { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; }
-    .name { font-size: 1.6rem; font-weight: 700; }
-    .role { font-size: 1rem; color: #f39c12; margin-bottom: 20px; }
-
-    .info-box { margin-bottom: 25px; }
-    .info-title { font-weight: 600; margin-bottom: 8px; }
-    .info-item { margin-bottom: 5px; font-size: 0.9rem; color: #555; }
-
-    .skill-bar { width: 100%; background: #eee; border-radius: 20px; height: 8px; overflow: hidden; margin: 6px 0 15px; }
-    .skill-fill { height: 100%; background: #f39c12; }
-
-    .download-btn { display: inline-block; background: #f39c12; padding: 12px 20px; color: white; font-weight: 600; border-radius: 8px; text-align: center; margin-top: 20px; text-decoration: none; }
-
-    /* HERO */
-    .hero { background: #fff; padding: 50px; border-radius: 15px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 3px 12px rgba(0,0,0,0.08); }
-    .hero-text { max-width: 55%; }
-    .hero h1 { font-size: 2.6rem; font-weight: 700; }
-    .highlight { color: #f39c12; }
-    .hero-btn { background: #f39c12; border: none; padding: 12px 25px; color: #fff; font-weight: 600; border-radius: 8px; margin-top: 25px; cursor: pointer; }
-    .hero-img { width: 280px; border-radius: 12px; }
-
-    /* SERVICES */
-    .section-title { text-align: center; font-size: 2rem; margin: 50px 0 10px; font-weight: 700; }
-    .services-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-top: 30px; }
-    .service-card { background: #fff; padding: 25px; border-radius: 12px; text-align: center; box-shadow: 0 3px 12px rgba(0,0,0,0.08); }
-    .service-card h3 { margin-top: 15px; font-size: 1.2rem; font-weight: 600; }
-
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jeffrey Geli — .NET Developer building reliable web applications, APIs, and business solutions.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Jeffrey Geli | .NET Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<div class="layout">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Jeffrey Geli home"><span class="brand-mark">JG</span><span>JEFFREY GELI<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#contact" class="nav-cta">Let's talk <span>↗</span></a>
+      </nav>
+    </header>
 
-  <!-- SIDEBAR -->
-  <div class="sidebar">
-    <img src="https://scontent.fmnl45-1.fna.fbcdn.net/v/t1.6435-1/80749245_10216495781214867_6339411384329043968_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeEM7ZnoTFhFlQFGxEMtNdwNy5yVmquS2VnLnJWaq5LZWYsEspMdXk5FNDQ0bYe2s-Y&_nc_ohc=JXuT6Y68Z4QQ7kNvwEmwcy9&_nc_oc=AdmCQcztUYIY8eeS-2QGPqA4izZjN-uDt6K11O4Mg4zmLl4ye5VBRXF_hAPZ0Ading9LBzwFNJ9LJlceG94K32X4&_nc_zt=24&_nc_ht=scontent.fmnl45-1.fna&_nc_gid=7VP9HWiI_vWcNVBzI6bF4w&oh=00_AfiFV0XD6xMuUKvhu7yhV9oGAthr00XfR7pb7DXaYAAIeA&oe=6943D6EF" class="profile-pic" />
-    <div class="name">Jeffrey Geli</div>
-    <div class="role">.NET Developer</div>
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> .NET DEVELOPER · PHILIPPINES</div>
+          <h1>Building software<br>that <span class="gradient-text">moves work</span><br>forward<span class="accent">.</span></h1>
+          <p class="hero-intro">I'm Jeffrey Geli — a software engineer focused on building dependable web applications, APIs, and practical solutions to complex business problems.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Let's work together <span>↗</span></a>
+            <a class="text-link" href="#experience">Explore my experience <span>↓</span></a>
+          </div>
+          <div class="hero-meta"><span>FULL-STACK DEVELOPMENT</span><span>BACKEND & API ENGINEERING</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Decorative code illustration">
+          <div class="visual-glow"></div>
+          <div class="code-window">
+            <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>developer.cs</span><span class="window-lock">⌘</span></div>
+            <div class="code-content">
+              <div><span class="line-no">01</span><span class="code-purple">public class</span> <span class="code-yellow">Developer</span></div>
+              <div><span class="line-no">02</span>{</div>
+              <div><span class="line-no">03</span>&nbsp;&nbsp;<span class="code-purple">public string</span> Name =&gt;</div>
+              <div><span class="line-no">04</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-green">"Jeffrey Geli"</span>;</div>
+              <div><span class="line-no">05</span></div>
+              <div><span class="line-no">06</span>&nbsp;&nbsp;<span class="code-purple">public string[]</span> Focus =&gt;</div>
+              <div><span class="line-no">07</span>&nbsp;&nbsp;&nbsp;&nbsp;[<span class="code-green">".NET"</span>, <span class="code-green">"APIs"</span>,</div>
+              <div><span class="line-no">08</span>&nbsp;&nbsp;&nbsp;&nbsp; <span class="code-green">"Web Applications"</span>];</div>
+              <div><span class="line-no">09</span></div>
+              <div><span class="line-no">10</span>&nbsp;&nbsp;<span class="code-purple">public void</span> <span class="code-blue">Build</span>()</div>
+              <div><span class="line-no">11</span>&nbsp;&nbsp;{</div>
+              <div><span class="line-no">12</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-comment">// Turn ideas into impact.</span></div>
+              <div><span class="line-no">13</span>&nbsp;&nbsp;}</div>
+              <div><span class="line-no">14</span>}</div>
+            </div>
+            <div class="code-footer"><span><i></i> Ready to build</span><span>C# · .NET</span></div>
+          </div>
+          <div class="floating-tag tag-top"><span class="tag-icon">⌘</span><span><b>7+ years</b><small>Software development</small></span></div>
+          <div class="floating-tag tag-bottom"><span class="tag-icon tag-icon-purple">↗</span><span><b>Full-stack mindset</b><small>From data to interface</small></span></div>
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        </div>
+        <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+      </section>
 
-    <div class="info-box">
-      <div class="info-title">Age</div>
-      <div class="info-item">30</div>
+      <section class="intro-strip">
+        <div class="strip-label">MY APPROACH</div>
+        <p>Thoughtful engineering. Clear communication. <span>Software built to solve real problems.</span></p>
+      </section>
 
-      <div class="info-title">Residence</div>
-      <div class="info-item">Philippines</div>
+      <section class="section about-section" id="about">
+        <div class="section-kicker">01 / ABOUT ME</div>
+        <div class="about-grid">
+          <div class="about-profile">
+            <div class="profile-photo-wrap">
+              <img src="assets/jeffrey-geli-profile.jpg" alt="Portrait of Jeffrey Geli, .NET and Full-Stack Developer">
+              <span class="profile-photo-caption"><i></i> THE DEVELOPER BEHIND THE CODE</span>
+            </div>
+            <h2>Engineering with<br><span class="muted-heading">purpose.</span></h2>
+          </div>
+          <div class="about-copy">
+            <p class="lead">I’m an experienced .NET Developer with a background in financial technology and business application development.</p>
+            <p>My work spans backend services, web APIs, databases, and user-facing applications. I enjoy turning requirements into maintainable solutions, collaborating with teams, and helping other developers grow through mentoring and knowledge sharing.</p>
+            <p>I bring a practical, quality-focused approach to every stage of development — from understanding the problem and shaping the solution to testing, delivery, and continuous improvement.</p>
+            <div class="about-facts"><div><strong>7+<sup> yrs</sup></strong><span>Development experience</span></div><div><strong>.NET</strong><span>Core technology</span></div><div><strong>Full-stack</strong><span>Development focus</span></div></div>
+          </div>
+        </div>
+      </section>
 
-      <div class="info-title">Availability</div>
-      <div class="info-item">Available</div>
+      <section class="section expertise-section" id="expertise">
+        <div class="section-kicker">02 / TECHNICAL EXPERTISE</div>
+        <div class="section-heading-row"><h2>Tools I use to<br><span class="muted-heading">make things work.</span></h2><p>A practical toolkit for building, connecting, and maintaining modern business software.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card skill-featured"><div class="skill-top"><span class="skill-number">01</span><span class="skill-symbol">C#</span></div><h3>.NET Development</h3><p>Building application logic and services with the .NET ecosystem.</p><div class="chips"><span>C#</span><span>.NET / .NET Core</span><span>ASP.NET MVC</span><span>Entity Framework</span></div></article>
+          <article class="skill-card"><div class="skill-top"><span class="skill-number">02</span><span class="skill-symbol">{ }</span></div><h3>APIs & Architecture</h3><p>Designing connected systems and service-oriented solutions.</p><div class="chips"><span>ASP.NET Web API</span><span>SOA</span><span>Microservices</span><span>WCF</span></div></article>
+          <article class="skill-card"><div class="skill-top"><span class="skill-number">03</span><span class="skill-symbol">▤</span></div><h3>Data & Persistence</h3><p>Working with relational data and application persistence.</p><div class="chips"><span>SQL Server</span><span>Entity Framework</span><span>Database Design</span></div></article>
+          <article class="skill-card"><div class="skill-top"><span class="skill-number">04</span><span class="skill-symbol">⌘</span></div><h3>Frontend Development</h3><p>Creating responsive interfaces and interactive web experiences.</p><div class="chips"><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Vue.js</span></div></article>
+          <article class="skill-card"><div class="skill-top"><span class="skill-number">05</span><span class="skill-symbol">◇</span></div><h3>Mobile Development</h3><p>Experience developing cross-platform mobile applications.</p><div class="chips"><span>Xamarin</span></div></article>
+          <article class="skill-card"><div class="skill-top"><span class="skill-number">06</span><span class="skill-symbol">↗</span></div><h3>Engineering Practices</h3><p>Working collaboratively to deliver reliable, maintainable software.</p><div class="chips"><span>Agile</span><span>Code Review</span><span>Testing</span><span>Mentoring</span></div></article>
+        </div>
+      </section>
 
-      <div class="info-title">Address</div>
-      <div class="info-item">Malabon City</div>
-    </div>
+      <section class="section experience-section" id="experience">
+        <div class="section-kicker">03 / CAREER JOURNEY</div>
+        <div class="section-heading-row"><h2>Experience that<br><span class="muted-heading">keeps building.</span></h2><p>Roles and teams that have shaped my approach to software engineering.</p></div>
+        <div class="timeline">
+          <article class="timeline-item"><div class="timeline-date">OCT 2023 — PRESENT</div><div class="timeline-marker"></div><div class="timeline-content"><div class="role-top"><div><h3>Senior Software Engineer</h3><h4>CoDev Philippines</h4></div><span class="role-index">01</span></div><p>Developing features for a web application as a full-stack engineer, working across ASP.NET, SQL, Entity Framework, JavaScript, HTML, CSS, Vue.js, and .NET Core.</p><ul><li>Contribute to Agile stories and deliver new application features.</li><li>Propose architecture and technical solutions when needed.</li><li>Mentor and support less experienced developers.</li></ul><div class="role-tags"><span>.NET Core</span><span>Vue.js</span><span>SQL</span><span>Microservices</span></div></div></article>
+          <article class="timeline-item"><div class="timeline-date">MAR 2023 — SEP 2023</div><div class="timeline-marker"></div><div class="timeline-content"><div class="role-top"><div><h3>Software Engineer II</h3><h4>Arch Global Services Inc. · Philippines</h4></div><span class="role-index">02</span></div><p>Supported embedded system development through software testing, diagnosis, code review, and system integration.</p><ul><li>Performed software testing and diagnosis.</li><li>Supported code review, integration, and validation.</li><li>Contributed to sprint planning and backlog prioritization.</li></ul></div></article>
+          <article class="timeline-item"><div class="timeline-date">FEB 2019 — MAR 2023</div><div class="timeline-marker"></div><div class="timeline-content"><div class="role-top"><div><h3>Senior .NET Developer / Xamarin</h3><h4>Techfactors · Quezon City</h4></div><span class="role-index">03</span></div><p>Developed and maintained software projects, reusable code libraries, and testable solutions using Agile methodologies.</p><ul><li>Built and tested software for multiple projects.</li><li>Maintained shared code libraries for consistency and reliability.</li><li>Managed team resources to support sprint goals.</li></ul></div></article>
+          <article class="timeline-item"><div class="timeline-date">JUL 2018 — JAN 2019</div><div class="timeline-marker"></div><div class="timeline-content"><div class="role-top"><div><h3>.NET Developer</h3><h4>Philus Technology Inc. · Makati</h4></div><span class="role-index">04</span></div><p>Designed, developed, and deployed application modules, interfaces, and enhancements based on stakeholder requirements.</p><ul><li>Applied quality assurance practices to reduce coding errors.</li><li>Investigated helpdesk issues and identified root causes.</li></ul></div></article>
+          <article class="timeline-item"><div class="timeline-date">MAY 2017 — MAR 2018</div><div class="timeline-marker"></div><div class="timeline-content"><div class="role-top"><div><h3>Junior .NET Developer</h3><h4>John Clements Consultants · NCR</h4></div><span class="role-index">05</span></div><p>Supported software development activities, including database design, data loading, interface layout, and application implementation.</p></div></article>
+        </div>
+      </section>
 
-    <div class="info-box">
-      <div class="info-title">Languages</div>
-      <div>English</div>
-      <div class="skill-bar"><div class="skill-fill" style="width: 100%"></div></div>
-      <div>Filipino</div>
-      <div class="skill-bar"><div class="skill-fill" style="width: 100%"></div></div>
-    </div>
+      <section class="section education-section">
+        <div class="section-kicker">04 / EDUCATION</div>
+        <div class="education-card"><div class="education-icon">✳</div><div><h3>Bachelor-level studies in Information Technology</h3><p>STI College Caloocan</p></div><span>2011 — 2016</span></div>
+      </section>
 
-    <div class="info-box">
-      <div class="info-title">Skills</div>
-      <div>.NET / .NET Core</div>
-      <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
-      <div>ASP.NET MVC</div>
-      <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
-      <div>Web API</div>
-      <div class="skill-bar"><div class="skill-fill" style="width: 92%"></div></div>
-      <div>SQL Server</div>
-      <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
-    </div>
+      <section class="contact-section" id="contact">
+        <div class="contact-inner">
+          <div class="section-kicker">05 / GET IN TOUCH</div>
+          <p class="contact-overline">HAVE A PROJECT OR OPPORTUNITY?</p>
+          <h2>Let's build<br><span class="gradient-text">something meaningful.</span></h2>
+          <p class="contact-copy">I'm open to connecting with teams, businesses, and people who value thoughtful software development.</p>
+          <a class="button button-primary contact-button" href="mailto:jeff.geli003@gmail.com">Start a conversation <span>↗</span></a>
+          <div class="contact-links"><a href="mailto:jeff.geli003@gmail.com">jeff.geli003@gmail.com</a><a href="https://github.com/jlgelii" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="tel:+639276821495">+63 927 682 1495</a></div>
+        </div>
+        <div class="contact-decoration">JG<span>.</span></div>
+      </section>
+    </main>
 
-    <a href="#" class="download-btn">Download CV</a>
+    <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">JG</span><span>JEFFREY GELI<span class="brand-dot">.</span></span></a><span>Designed & built with care.</span><span>© <span id="year"></span> Jeffrey Geli</span></footer>
   </div>
-
-  <!-- MAIN CONTENT -->
-  <div class="content">
-
-    <!-- HERO -->
-    <div class="hero">
-      <div class="hero-text">
-        <h1>I'm Jeffrey Geli<br><span class="highlight">Software Engineer</span></h1>
-        <p>Experienced software engineer specializing in ASP.NET, Web API, Microservices, and enterprise application development.</p>
-        <button class="hero-btn">Hire Me</button>
-      </div>
-      <img src="https://avatars.githubusercontent.com/u/18645001?v=4" class="hero-img" />
-    </div>
-
-    <!-- SERVICES -->
-    <h2 class="section-title">My Services</h2>
-    <p style="text-align:center; color:#555">High-quality engineering solutions built with modern architectures.</p>
-
-    <div class="services-container">
-      <div class="service-card">
-        <h3>Web Development</h3>
-        <p>ASP.NET, MVC, SPA applications, REST API development.</p>
-      </div>
-      <div class="service-card">
-        <h3>System Architecture</h3>
-        <p>Microservices, SOA, scalable enterprise system design.</p>
-      </div>
-      <div class="service-card">
-        <h3>Mobile Development</h3>
-        <p>Xamarin cross‑platform mobile app development.</p>
-      </div>
-      <div class="service-card">
-        <h3>Database Engineering</h3>
-        <p>SQL optimization, DB design, performance tuning.</p>
-      </div>
-      <div class="service-card">
-        <h3>UI/UX Implementation</h3>
-        <p>Responsive UI, frontend integration, Vue.js development.</p>
-      </div>
-      <div class="service-card">
-        <h3>Software Testing</h3>
-        <p>Debugging, QA, validations, and production monitoring.</p>
-      </div>
-    </div>
-
-  </div>
-</div>
+  <a class="back-to-top" href="#home" aria-label="Back to top">↑</a>
 </body>
 </html>
